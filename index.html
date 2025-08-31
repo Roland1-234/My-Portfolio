@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="Roland-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <div class="nav-links">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+    <div id="hamburger">
+      <div class="bar bar-1"></div>
+      <div class="bar bar-2"></div>
+      <div class="bar bar-3"></div>
+    </div>
+    <button class="toggle-btn" id="themeToggle">🌙 Dark</button>
+  </nav>
+
+  <header>
+    <h1><span class="typing"></span></h1>
+    <p>A Passionate Frontend Developer & Learner</p>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+      View My Work
+    </button>
+  </header>
+
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a dedicated developer who loves building interactive, modern, and responsive websites. 
+      I enjoy learning new technologies and turning ideas into reality through clean and creative code.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="project-card">
+        <img src="Quiz web-logo.png" alt="Project One">
+        <div class="project-info">
+          <h3>Quiz Website</h3>
+          <p>A modern responsive landing page built with HTML & CSS.</p>
+          <div class="project-links">
+            <a href="quiz.html" target="_blank" class="btn">Live Demo</a>
+            <a href="#" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="My Portfolio-logo.png" alt="Project Two">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A portfolio site with dark mode and animations.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn">Live Demo</a>
+            <a href="#" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="To-Do List-logo.png" alt="Project Three">
+        <div class="project-info">
+          <h3>To-Do App</h3>
+          <p>A JavaScript to-do app with local storage support.</p>
+          <div class="project-links">
+            <a href="todo.html" target="_blank" class="btn">Live Demo</a>
+            <a href="#" target="_blank" class="btn">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Roland Adebayo | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
