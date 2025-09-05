@@ -48,8 +48,10 @@ const text = "Hi, I'm Roland 👋";
           }
         });
 
-    // Dark mode toggle
+    // Dark mode default
     const toggleBtn = document.getElementById("themeToggle");
+    document.body.classList.add("dark");
+    toggleBtn.textContent = "☀️ Light";
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark");
       if (document.body.classList.contains("dark")) {
